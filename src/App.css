@@ -1,6 +1,12 @@
+img{
+  margin-top: 12rem;
+  margin-bottom: 3rem;
+}
+
 .App {
   text-align: center;
-  background-color: #040f13;
+  background-color: #030c0f;
+  font-size: 54px;
 }
 
 .App-logo {

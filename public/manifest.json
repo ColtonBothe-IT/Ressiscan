@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Ressiscan",
+  "name": "Ressiscan, The Receipt Scanner Web App",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,18 +8,18 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "ressiscan-logo.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "245x332"
     },
     {
-      "src": "logo512.png",
+      "src": "ressiscan-logo125.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "125x169"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#030c0f",
+  "background_color": "#030c0f"
 }
