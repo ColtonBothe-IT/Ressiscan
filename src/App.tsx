@@ -1,20 +1,31 @@
 import React from 'react';
-import {
-  BrowserRouter as Router, Route, Link
-} from "react-router-dom";
+// import {
+//   BrowserRouter as Router, Route, Link
+// } from "react-router-dom";
 import './App.css';
-import Nav from './Nav';
-
+import './index.css'
+import Navbar, { NavItem, DropdownMenu } from './Navbar'
 import logo from './ressiscan-logo.svg'
 
 function App() {
   return (
-    
-    <div className="App">
-      <img src={logo} alt="logo" height={200} width={150}/>
-      <br />
-      Hi Jesus
+    <>
+
+    <Navbar>
+      <NavItem icon="📸"></NavItem>
+      <NavItem icon="🔽">
+
+        <DropdownMenu></DropdownMenu>
+        
+      </NavItem>
+
+      
+    </Navbar>
+    <div className='content'>
+      <img src={logo} alt="logo" />
+      <span>Hi Jesus I Made a Navbar</span>
     </div>
+    </>
   );
 }
 
