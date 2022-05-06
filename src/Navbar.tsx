@@ -31,7 +31,7 @@ function NavItem(props: any) {
 
   return(
     <li className="nav-item">
-      <a href="#" className="icon-button" onClick={() => setOpen(!open)}>
+      <a href={props.Link} className="icon-button" onClick={() => setOpen(!open)}>
         {props.icon}
       </a>
 
@@ -52,9 +52,9 @@ function DropdownMenu() {
 
   function DropdownItem(props: any) {
     return (
-      <a href="#" className="menu-item" onClick={() => props.goToMenu && setActiveMenu(props.goToMenu)}>
+      <a href={props.Link} className="menu-item" onClick={() => props.goToMenu && setActiveMenu(props.goToMenu)}>
         <span className="icon-button">{props.leftIcon}</span>
-
+        
         {props.children}
 
         <span className="icon-right">{props.rightIcon}</span>
@@ -69,9 +69,9 @@ function DropdownMenu() {
 
         <div className="menu">
 
-        <DropdownItem leftIcon="📃" ><a href="https://www.youtube.com">test</a></DropdownItem>
+        <DropdownItem Link="/my-receipts" leftIcon="📃" >My Receipts</DropdownItem>
         <DropdownItem leftIcon="⚙" goToMenu="settings">Settings</DropdownItem>
-        <DropdownItem leftIcon="➡">Log Out</DropdownItem>
+        <DropdownItem Link="/" leftIcon="➡">Log Out</DropdownItem>
         
         </div>
       </CSSTransition>
@@ -80,10 +80,10 @@ function DropdownMenu() {
 
         <div className="menu">
 
-        <DropdownItem leftIcon="⏪" goToMenu="main">Back</DropdownItem>
-        <DropdownItem leftIcon="😒" goToMenu="main">This</DropdownItem>
-        <DropdownItem leftIcon="😁" goToMenu="main">That</DropdownItem>
-        <DropdownItem leftIcon="😊" goToMenu="main">The Other</DropdownItem>
+        <DropdownItem leftIcon="⏪" goToMenu="main"></DropdownItem>
+        <DropdownItem Link="https://www.revzilla.com" leftIcon="😒">Revzilla</DropdownItem>
+        <DropdownItem Link="https://www.npmjs.org" leftIcon="😁">Node Package Manager</DropdownItem>
+        <DropdownItem Link="https://www.op.gg" leftIcon="😊">OP.GG</DropdownItem>
         
         
         </div>

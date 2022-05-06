@@ -12,7 +12,7 @@ function App() {
     <>
 
     <Navbar>
-      <NavItem icon="📸"></NavItem>
+      <NavItem Link="/camera" icon="📸"></NavItem>
       <NavItem icon="🔽">
 
         <DropdownMenu></DropdownMenu>
