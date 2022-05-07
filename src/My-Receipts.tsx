@@ -1,13 +1,10 @@
 import React from 'react';
-//import logo from './logo.svg';
 import './App.css';
 
-function App() {
+function MyReceipts() {
   return (
-    <div>
-      yay
-    </div>
+    <h1>My Receipts</h1>
   );
 }
 
-export default App;
+export default MyReceipts;
