@@ -3,9 +3,11 @@
 }
 
 .heading {
+    font-weight: 700;
     margin: 3.125rem 0 1.25rem 0;
 }
 
 .heading-desc {
+    font-weight: 600;
     padding: 0 5.25rem 0 5.25rem;
 }
