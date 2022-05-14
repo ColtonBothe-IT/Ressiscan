@@ -2,6 +2,10 @@
     text-align: center;
 }
 
+a {
+    text-decoration: none;
+}
+
 .heading {
     font-weight: 700;
     margin: 3.125rem 0 1.25rem 0;

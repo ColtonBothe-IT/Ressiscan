@@ -13,6 +13,7 @@ function Home() {
         <Button 
             border="none"
             color="#DE2821"
+            fontColor="#2C3121"
             height = "3.125rem"
             onClick={() =>
                         /* Make thie open up a popup that brings up camera window */ 
@@ -26,6 +27,7 @@ function Home() {
         <Button 
             border="none"
             color="#6698B7"
+            fontColor="#2C3121"
             height = "3.125rem"
             onClick={() => 
                         /* Make thie open up a popup that brings up upload file window */ 
@@ -36,6 +38,13 @@ function Home() {
             children = "Upload a Receipt Instead"
             margin= ".375rem 0 0 0"
         />
+
+        <div className='flex-container'>
+            <div className="flex-items">Scan receipts using your phone’s camera.</div>
+            <div className="flex-items">Or upload an image file of your receipt.</div>
+            <div className="flex-items">Access all of your saved receipts in the Receipts Manager.</div>
+            <div className="flex-items">Easily track all of your spending with itemized search features!</div>
+        </div>
         </>
     );
 }
