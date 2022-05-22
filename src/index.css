@@ -42,7 +42,7 @@ a {
 /* <nav> */
 .navbar {
   height: var(--nav-size);
-  background-color: var(--bg);
+  background-color: rgba(15, 60, 74, 0.3);
   padding: 0 1rem;
   border-bottom: var(--border);
 }

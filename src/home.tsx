@@ -41,7 +41,7 @@ function Home() {
 
         <div className='flex-container'>
             <div className="flex-items">
-                <div className="img-box scan-box"></div>
+                <div className="img-box scan-box"><img src="./public/ressiscan-logo.png" alt="Scanning a Receipt" /></div>
                 <span>Scan receipts using your phone’s camera.</span>
             </div>
             <div className="flex-items">
