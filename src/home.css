@@ -15,3 +15,25 @@ a {
     font-weight: 600;
     padding: 0 5.25rem 0 5.25rem;
 }
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 2rem 3rem;
+    justify-content: center;
+}
+
+.flex-items {
+    flex: 1 40%;
+    padding: 10px;
+    font-size: 12px;
+    text-align: left;
+}
+
+.img-box {
+    margin-bottom: 10px;
+    background-color: gray;
+    width: 100px;
+    height: 100px;
+}

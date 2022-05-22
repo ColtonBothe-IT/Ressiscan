@@ -11,6 +11,7 @@ interface Props {
     radius: string;
     width: string;
     margin: string;
+    //font-family and font-weight to add
 }
 
 const Button: React.FC<Props> = ({

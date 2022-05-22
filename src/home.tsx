@@ -22,7 +22,7 @@ function Home() {
             radius = "1em"
             width = "15rem"
             children = "Scan a Receipt Now!"
-            margin= "2rem 0 0 0"
+            margin= "2rem 0 0.625rem 0"
         />
         <Button 
             border="none"
@@ -40,10 +40,22 @@ function Home() {
         />
 
         <div className='flex-container'>
-            <div className="flex-items">Scan receipts using your phone’s camera.</div>
-            <div className="flex-items">Or upload an image file of your receipt.</div>
-            <div className="flex-items">Access all of your saved receipts in the Receipts Manager.</div>
-            <div className="flex-items">Easily track all of your spending with itemized search features!</div>
+            <div className="flex-items">
+                <div className="img-box scan-box"></div>
+                <span>Scan receipts using your phone’s camera.</span>
+            </div>
+            <div className="flex-items">
+                <div className="img-box upload-box"></div>
+                Or upload an image file of your receipt.
+            </div>
+            <div className="flex-items">
+                <div className="img-box receiptsmanager-box"></div>
+                Access all of your saved receipts in the Receipts Manager.
+            </div>
+            <div className="flex-items">
+                <div className="img-box search-box"></div>
+                Easily track all of your spending with itemized search features!
+            </div>
         </div>
         </>
     );
