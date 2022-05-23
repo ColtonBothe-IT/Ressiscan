@@ -2,6 +2,13 @@ import React from 'react';
 import './App.css';
 import './home.css';
 
+import sr from './images/scan-receipt.jpg';
+import ui from './images/upload-image.jpg';
+import ar from './images/access-receipts.jpg';
+import sf from './images/search-features.jpg';
+
+
+
 import Button from './components/ButtonComponent';
 
 function Home() {
@@ -41,20 +48,28 @@ function Home() {
 
         <div className='flex-container'>
             <div className="flex-items">
-                <div className="img-box scan-box"><img src="./public/ressiscan-logo.png" alt="Scanning a Receipt" /></div>
+                <div className="img-box scan-box">
+                    <img className="desc-image" src={ sr } alt="Scanning a Receipt" />
+                </div>
                 <span>Scan receipts using your phone’s camera.</span>
             </div>
             <div className="flex-items">
-                <div className="img-box upload-box"></div>
-                Or upload an image file of your receipt.
+                <div className="img-box upload-box">
+                    <img className="desc-image" src={ ui } alt="Scanning a Receipt" />
+                </div>
+                <span>Or upload an image file of your receipt.</span>
             </div>
             <div className="flex-items">
-                <div className="img-box receiptsmanager-box"></div>
-                Access all of your saved receipts in the Receipts Manager.
+                <div className="img-box receiptsmanager-box">
+                    <img className="desc-image" src={ ar } alt="Scanning a Receipt" />
+                </div>
+                <span>Access all of your saved receipts in the Receipts Manager.</span>
             </div>
             <div className="flex-items">
-                <div className="img-box search-box"></div>
-                Easily track all of your spending with itemized search features!
+                <div className="img-box search-box">
+                    <img className="desc-image" src={ sf } alt="Scanning a Receipt" />
+                </div>
+                <span>Easily track all of your spending with itemized search features!</span>
             </div>
         </div>
         </>
