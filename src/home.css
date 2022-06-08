@@ -6,14 +6,22 @@ a {
     text-decoration: none;
 }
 
+button {
+    font-family: "Raleway";
+    font-weight: 800;
+    color: #2C3121;
+    letter-spacing: .01rem;
+}
+
 .heading {
     font-weight: 700;
-    margin: 3.125rem 0 1.25rem 0;
+    letter-spacing: 1px;
+    margin: 3rem 0 1.875rem 0;
 }
 
 .heading-desc {
     font-weight: 600;
-    padding: 0 5.25rem 0 5.25rem;
+    padding: 0 6.875rem;
 }
 
 .flex-container {
@@ -30,6 +38,7 @@ a {
     padding: 10px;
     font-size: 12px;
     text-align: left;
+    letter-spacing: .2px;
 }
 
 .img-box {

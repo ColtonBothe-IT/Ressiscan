@@ -17,10 +17,12 @@ function Home() {
         <h1 className="heading">Ressiscan</h1>
         <div className="heading-desc">The place to store all of your receipts!</div>
 
+        
         <Button 
             border="none"
             color="#DE2821"
             fontColor="#2C3121"
+            fontSize='18px'
             height = "3.125rem"
             onClick={() =>
                         /* Make thie open up a popup that brings up camera window */ 
@@ -31,10 +33,12 @@ function Home() {
             children = "Scan a Receipt Now!"
             margin= "2rem 0 0.625rem 0"
         />
+        
         <Button 
             border="none"
             color="#6698B7"
             fontColor="#2C3121"
+            fontSize='14px'
             height = "3.125rem"
             onClick={() => 
                         /* Make thie open up a popup that brings up upload file window */ 
@@ -45,6 +49,7 @@ function Home() {
             children = "Upload a Receipt Instead"
             margin= ".375rem 0 0 0"
         />
+    
 
         <div className='flex-container'>
             <div className="flex-items">
