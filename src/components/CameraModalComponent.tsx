@@ -5,27 +5,31 @@ interface Props {
     border: string;
 }
 
-const Popup: React.FC<Props> = ({
+const CameraModal: React.FC<Props> = ({
     border
 }) => {
     return (
-        <div className='popup-container' style={{
+        <div className='modal-container' style={{
             border
         }}>
-            <div></div>
+            <button className='close-button'>X</button>
+            <div className='camera-window'></div>
+            <button className='takephoto-button'>o</button>
+
         </div>
         
     )
 }
 
-export default Popup;
+export default CameraModal;
 
 /*
     to do: 
-    make X close button make camera window.
+    make X close button make camera window. started!
     make camera ask for perms. 
     make camera button. 
 
+    create a shadow on everything behind modal.
     after photo is taken will show small prev.
     of photo.
     can confirm or retake.
