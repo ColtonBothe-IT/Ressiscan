@@ -2,19 +2,69 @@ import React from 'react';
 import '../App.css';
 
 interface Props {
+    backgroundColor: string;
     border: string;
+    color: string;
+    fontSize: string;
+    fontWeight: string;
+    position: string;
+
+    height: string;
+    width: string;
+    margin: string;
+    padding: string;
+
+    onClick: () => void;
 }
 
 const CameraModal: React.FC<Props> = ({
-    border
+    backgroundColor,
+    border,
+    color,
+    fontSize,
+    fontWeight,
+    position,
+    height,
+    width,
+    margin,
+    padding,
+    onClick
 }) => {
     return (
         <div className='modal-container' style={{
-            border
+            backgroundColor,
+            border,
+            height,
+            width, //add pos
+            margin,
+            padding
         }}>
-            <button className='close-button'>X</button>
-            <div className='camera-window'></div>
-            <button className='takephoto-button'>o</button>
+            <button className='close-button' 
+            onClick={ 
+                onClick
+            } 
+            style={{
+                color,
+                fontSize,
+                fontWeight
+            }}>x</button>
+
+            <div className='camera-window' 
+            style={{
+                backgroundColor,
+                border, //black border? thin? not rounded off
+                fontSize: fontSize
+            }}></div>
+
+            <button className='takephoto-button' 
+            onClick={
+                onClick
+            }
+            style={{
+                color,
+                fontSize,
+                fontWeight
+            }}>o</button>
 
         </div>
         

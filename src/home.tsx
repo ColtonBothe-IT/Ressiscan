@@ -8,7 +8,6 @@ import ar from './images/access-receipts.jpg';
 import sf from './images/search-features.jpg';
 
 
-
 import Button from './components/ButtonComponent';
 
 function Home() {
