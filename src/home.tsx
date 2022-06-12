@@ -10,12 +10,12 @@ import sf from './images/search-features.jpg';
 
 import Button from './components/ButtonComponent';
 
+
 function Home() {
     return (
         <>
         <h1 className="heading">Ressiscan</h1>
         <div className="heading-desc">The place to store all of your receipts!</div>
-
         
         <Button 
             border="none"
@@ -49,6 +49,7 @@ function Home() {
             margin= ".375rem 0 0 0"
         />
     
+        
 
         <div className='flex-container'>
             <div className="flex-items">
