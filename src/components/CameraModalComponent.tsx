@@ -7,12 +7,14 @@ interface Props {
     color: string;
     fontSize: string;
     fontWeight: string;
-    position: string;
 
     height: string;
     width: string;
     margin: string;
     padding: string;
+
+    display: string;
+    position: any;
 
     onClick: () => void;
 }
@@ -23,49 +25,63 @@ const CameraModal: React.FC<Props> = ({
     color,
     fontSize,
     fontWeight,
-    position,
     height,
     width,
     margin,
     padding,
+    display,
+    position,
     onClick
 }) => {
     return (
         <div className='modal-container' style={{
             backgroundColor,
             border,
+            display,
+            position,
             height,
-            width, //add pos
+            width,
             margin,
-            padding
+            padding //done?
         }}>
-            <button className='close-button' 
-            onClick={ 
-                onClick
-            } 
-            style={{
-                color,
-                fontSize,
-                fontWeight
-            }}>x</button>
-
-            <div className='camera-window' 
-            style={{
+            <div className='modal-content' style={{
                 backgroundColor,
-                border, //black border? thin? not rounded off
-                fontSize: fontSize
-            }}></div>
+                width,
+                margin,
+                padding,
+                position //done?
+            }}>
+                <button className='close-button' 
+                onClick={
+                    onClick
+                } 
+                style={{
+                    color,
+                    fontSize,
+                    fontWeight
+                }}>x</button>
 
-            <button className='takephoto-button' 
-            onClick={
-                onClick
-            }
-            style={{
-                color,
-                fontSize,
-                fontWeight
-            }}>o</button>
+                <div className='camera-window' 
+                style={{
+                    backgroundColor,
+                    border, //black border? thin? not rounded off
+                    fontSize: fontSize,
+                    width,
+                    height,
+                    padding,
+                    margin
+                }}></div>
 
+                <button className='takephoto-button' 
+                onClick={
+                    onClick
+                }
+                style={{
+                    color,
+                    fontSize,
+                    fontWeight
+                }}>o</button>
+            </div>
         </div>
         
     )
