@@ -1,0 +1,38 @@
+button {
+    all: unset;
+}
+
+video {
+    width: auto;
+    height: auto;
+    aspect-ratio: 9/16;
+}
+
+.camera-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: 1px solid;
+    border-color: rgb(10, 34, 41, .7);
+    border-radius: 15px;
+    margin: 5% 10%;
+}
+
+.camera-box {
+    border: 1px solid;
+    border-color: rgba(242, 241, 239, .2);
+    height: 450px;
+    aspect-ratio: 9/16;
+
+    margin: 1rem;
+}
+
+.camera-button {
+    font-size: 64px;
+    font-weight: 700;
+}
+
+.lowercontent-container {
+
+}
