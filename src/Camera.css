@@ -22,7 +22,7 @@ video {
 .camera-box {
     border: 1px solid;
     border-color: rgba(242, 241, 239, .2);
-    height: 450px;
+    height: 430px;
     aspect-ratio: 9/16;
 
     margin: 1rem;
