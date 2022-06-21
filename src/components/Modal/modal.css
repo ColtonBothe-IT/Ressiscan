@@ -1,0 +1,38 @@
+/* #modal {
+
+} */
+
+.modal-content {
+    padding: 10px;
+}
+
+.x-button {
+
+}
+
+.x-button::after {
+
+}
+
+.title {
+
+}
+
+.imagebutton-container {
+
+}
+
+.confirm-image {
+    padding: 0;
+}
+
+.button-container {
+    display:flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 1rem auto;
+}
+
+.button-container > button {
+
+}

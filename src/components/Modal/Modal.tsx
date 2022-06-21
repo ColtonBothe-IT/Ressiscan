@@ -1,23 +1,35 @@
 import React from "react";
+import './modal.css';
 
+interface Props {
+    image: string;
+}
 
-export default class Modal extends React.Component {
-  render() {
+const Modal: React.FC<Props> = ({
+    image
+}) => {
     
+     
     return (
         <div id="modal" style={{display: "none"}}>
             <div className="modal-content">
-                <div className="button-container">
-                    {/* <img src={image} alt=''/> */}
-                    <button>Cancel/Retake</button>
-                    <button>Continue</button>
+                <button className="x-button">X</button>
+                <h3 className="title">Would you like to keep this image?</h3>
+                <div className="imagebutton-container">
+                    <img className="confirm-image" src={image} alt=''/>
+                    <div className="button-container">
+                        <button>Cancel/Retake</button>
+                        <button>Continue</button>
+                    </div>
                 </div>
             </div>
         </div>
     );
 
   }
-}
+
+
+export default Modal;
 
 /*
     ---THIS IS THE CODE YOU INPUT ON THE PAGE WHERE YOU WANT THE MODAL TO SHOW UP---

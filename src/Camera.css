@@ -37,10 +37,18 @@ video {
     color: rgba(151, 151, 151, 0.8);
 }
 
+.camera-button:active {
+    font-size: 64px;
+    font-weight: 700;
+    transform: translateY(3px);
+    
+    color: rgba(151, 151, 151, 0.8);
+}
+
 #modal {
     
     border: 1px solid;
-    background-color: antiquewhite;
+    background-color: rgba(255, 238, 202, 1);
     color: #242526;
 
 
