@@ -8,7 +8,7 @@ export default class Modal extends React.Component {
         <div id="modal" style={{display: "none"}}>
             <div className="modal-content">
                 <div className="button-container">
-                    <img src={image} alt=''/>
+                    {/* <img src={image} alt=''/> */}
                     <button>Cancel/Retake</button>
                     <button>Continue</button>
                 </div>
