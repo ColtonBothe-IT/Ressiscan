@@ -1,65 +1,24 @@
 import React, { useRef, /*useEffect,*/ useState } from 'react';
 import { Camera } from "react-camera-pro";
 
+import Modal from './components/Modal/Modal'
 
 import './App.css';
 import './Camera.css'
 
 
-// function ScannerCamera() {
-//     //NOTE!! CAM NOT WORKING WHEN FILES ARE PUT UP ON HOSTING SITE. 
-//     const videoRef = useRef(null);
-//     const photoRef = useRef(null);
 
-//     const [hasPhoto, setHasPhoto] = useState(false);
-
-//     const getVideo = () => {
-//         navigator.mediaDevices.getUserMedia({ video:
-//              {  
-//                 width: {max: 253.125}, 
-//                 height: {max:450}, 
-//                 facingMode: { exact: 'environment' } 
-//             } 
-//         })
-//         .then(stream => {
-//             let video = videoRef.current;
-//             video.srcObject = stream;
-//             video.play();
-//         })
-//         .catch(err => {
-//             console.log(err);
-//         })
-//     }
-
-//     useEffect(() => {
-//         getVideo();
-//     }, [videoRef])
-
-//     function Print() {
-//         console.log("yay!");
-//     }
-
-//     return (
-//         <>
-
-//         
-//         <div >
-//             
-//                 <video ref={ videoRef }></video>
-//             </div>
-//             <button  onClick={Print}>o</button>
-//             <div className={"result" + (hasPhoto ? 'hasPhoto' : '')}>
-//                 {/* <canvas ref={ photoRef }></canvas>
-//                 <button>CLOSE</button> */}
-//             </div>
-//         </div>
-
-//         <div className='lowercontent-container'></div>
-
-        
-//         </>
-//     );
-// }
+function showModal() {
+    const targetDiv = document.getElementById("modal");
+    console.log("success!")
+    if (targetDiv.style.display !== "none") {
+        targetDiv.style.display = "none";
+      } else if (targetDiv.style.display === "none") {
+        targetDiv.style.display = "block";
+      } else {
+        targetDiv.style.display = "block";
+      }
+}
 
 const ScannerCamera = () => {
     const camera = useRef(null);
@@ -68,7 +27,7 @@ const ScannerCamera = () => {
     return (
         <div>
             <h1>Camera</h1>
-            
+            <Modal />
             <div className='camera-container'>
                 <div className='camera-box'>
                     <Camera ref={camera} 
@@ -79,12 +38,16 @@ const ScannerCamera = () => {
                             canvas: 'Canvas is not supported.'
                             }}
                         facingMode='environment'
-                        aspectRatio={9 / 16}
+                        aspectRatio={ 9/16 }
                     />
                 </div>
-                <button className='camera-button' onClick={() => setImage(camera.current.takePhoto())}>o</button>
+                <button className='camera-button' onClick={() => { 
+                    setImage(camera.current.takePhoto());
+                    showModal();
+                }}>o</button>
             </div>
-
+            
+            
             <img src={image} alt=''/>
         </div>
     )

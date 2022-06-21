@@ -12,7 +12,8 @@ video {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    
+    background-color: rgba(15, 60, 74, 0.6);
     border: 1px solid;
     border-color: rgb(10, 34, 41, .7);
     border-radius: 15px;
@@ -21,7 +22,8 @@ video {
 
 .camera-box {
     border: 1px solid;
-    border-color: rgba(242, 241, 239, .2);
+    border-color: rgba(29, 29, 29, 0.6);
+    
     height: 430px;
     aspect-ratio: 9/16;
 
@@ -31,8 +33,23 @@ video {
 .camera-button {
     font-size: 64px;
     font-weight: 700;
+    
+    color: rgba(151, 151, 151, 0.8);
 }
 
-.lowercontent-container {
+#modal {
+    
+    border: 1px solid;
+    background-color: antiquewhite;
+    color: #242526;
 
+
+    position: fixed;
+    margin: 0 auto;
+    right: 0px;
+    left: 0px;
+
+    width: 90%;
+    height: 70%;
+    z-index: 5;
 }

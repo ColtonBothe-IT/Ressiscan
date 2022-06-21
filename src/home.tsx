@@ -11,6 +11,8 @@ import sf from './images/search-features.jpg';
 import Button from './components/ButtonComponent';
 
 
+
+
 function Home() {
     return (
         <>
@@ -48,6 +50,8 @@ function Home() {
             children = "Upload a Receipt Instead"
             margin= ".375rem 0 0 0"
         />
+
+        
     
         
 
