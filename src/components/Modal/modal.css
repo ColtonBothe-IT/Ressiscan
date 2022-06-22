@@ -6,8 +6,17 @@
     padding: 10px;
 }
 
-.x-button {
+.closebutton-container {
+    display: flex;
+    justify-content: flex-end;
+}
 
+.x-button {
+    font-size: 20px;
+    font-weight: 800;
+    padding: 5px 10px;
+    border: 2px solid;
+    border-radius: 50%;
 }
 
 .x-button::after {
@@ -15,7 +24,7 @@
 }
 
 .title {
-
+    margin: 0.313rem 0 1.25rem 0;
 }
 
 .imagebutton-container {
@@ -28,11 +37,27 @@
 
 .button-container {
     display:flex;
-    gap: 20px;
+    gap: 30px;
     justify-content: center;
     margin: 1rem auto;
 }
 
 .button-container > button {
+    border: 1px solid;
+    border-radius: 25px;
+    padding: 5px 10px;
+    background-color: black;
+    box-shadow: 0 5px red;
+    color: antiquewhite;
+}
 
+.button-container > button:active {
+    border: 1px solid;
+    border-radius: 25px;
+    padding: 5px 10px;
+    background-color: black;
+    box-shadow: none;
+    color: antiquewhite;
+
+    transform: translateY(5px);
 }

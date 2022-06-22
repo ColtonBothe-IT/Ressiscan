@@ -13,7 +13,9 @@ const Modal: React.FC<Props> = ({
     return (
         <div id="modal" style={{display: "none"}}>
             <div className="modal-content">
-                <button className="x-button">X</button>
+                <div className="closebutton-container">
+                    <button className="x-button">X</button>
+                </div>
                 <h3 className="title">Would you like to keep this image?</h3>
                 <div className="imagebutton-container">
                     <img className="confirm-image" src={image} alt=''/>
