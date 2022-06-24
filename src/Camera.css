@@ -48,9 +48,10 @@ video {
 #modal {
     
     border: 1px solid;
+    border-radius: 10px;
     background-color: rgba(255, 238, 202, 1);
     color: #242526;
-
+    overflow: hidden;
 
     position: fixed;
     margin: 0 auto;
@@ -58,6 +59,7 @@ video {
     left: 0px;
 
     width: 90%;
-    height: 70%;
+    height: 77%;
     z-index: 5;
+
 }

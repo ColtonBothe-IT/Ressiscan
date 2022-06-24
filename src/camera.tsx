@@ -26,8 +26,9 @@ const ScannerCamera = () => {
 
     return (
         <div>
-            <h1>Camera</h1>
             <Modal image={image}/>
+            <h1>Camera</h1>
+            
             <div className='camera-container'>
                 <div className='camera-box'>
                     <Camera ref={camera} 
