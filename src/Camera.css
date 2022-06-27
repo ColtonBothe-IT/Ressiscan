@@ -8,6 +8,10 @@ video {
     aspect-ratio: 9/16;
 }
 
+.cam-title {
+    margin-top: 5px;
+}
+
 .camera-container {
     display: flex;
     flex-direction: column;
@@ -58,8 +62,8 @@ video {
     right: 0px;
     left: 0px;
 
-    width: 90%;
-    height: 77%;
+    width: 85%;
+    height: fit-content;
     z-index: 5;
 
 }

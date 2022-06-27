@@ -2,15 +2,11 @@
 
 } */
 
-.modal-content {
-    padding:  15px 20px 30px 20px;
-}
-
 .closebutton-container {
     display: flex;
     justify-content: flex-end;
+    margin: 10px 10px 0 0;
 }
-
 .x-button {
     font-size: 10px;
     font-weight: 800;
@@ -19,25 +15,30 @@
     border-radius: 25px;
 }
 
-.x-button::after {
+.x-button:active {
+    transform: translateY(3px);
+}
 
+.modal-content {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    padding:  0px 15px 20px 15px;
 }
 
 .title {
-    margin: 1rem 0 1.25rem 0;
+    margin: 1rem 0 .313rem 0;
 }
 
 .imagebutton-container {
-
+    width: fit-content;
 }
 
 .confirm-image {
-    width: auto;
-    
-    
-    max-height: 300px;
     padding: 0;
-    margin: 10px 0 20px 0;
+    margin: 10px 0 10px 0;
     border-radius: 10px;
 }
 
@@ -46,7 +47,7 @@
     flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
-    margin: 1rem auto;
+    
 }
 
 .button-container > button {
@@ -54,8 +55,8 @@
     border-radius: 20px;
     padding: 10px 15px;
     background-color: rgba(102, 152, 183, 1);
-    box-shadow: 0 5px rgba(3, 12, 15, .6); /* CHANGE THIS COLOR POSSIBLY TO AN RGBA */
-    color: rgba(3, 12, 15, 1); /* CHANGE THIS COLOR */
+    box-shadow: 0 5px rgba(3, 12, 15, .6); 
+    color: rgba(3, 12, 15, 1); 
 }
 
 .button-container > button:active {
@@ -64,7 +65,13 @@
     padding: 5px 15px;
     background-color: rgba(102, 152, 183, 1);
     box-shadow: none;
-    color: rgba(3, 12, 15, 1); /* CHANGE THIS COLOR */
+    color: rgba(3, 12, 15, 1); 
 
     transform: translateY(5px);
+}
+
+@media only screen and (max-width: 380px) {
+    .confirm-image {
+        height: 325px;
+    }
 }
