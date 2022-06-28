@@ -9,7 +9,7 @@ video {
 }
 
 .cam-title {
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .camera-container {
@@ -50,7 +50,7 @@ video {
 }
 
 #modal {
-    
+
     border: 1px solid;
     border-radius: 10px;
     background-color: rgba(255, 238, 202, 1);
@@ -65,5 +65,17 @@ video {
     width: 85%;
     height: fit-content;
     z-index: 5;
+
+}
+
+#overlay {
+
+    position: fixed;
+    left :0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color:#000;
+    opacity: 0.6;
 
 }

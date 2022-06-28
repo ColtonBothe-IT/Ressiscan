@@ -10,6 +10,8 @@ import './Camera.css'
 
 function showModal() {
     const targetDiv = document.getElementById("modal");
+    const targetContainer = document.getElementById("overlay");
+
     console.log("success!")
     if (targetDiv.style.display !== "none") {
         targetDiv.style.display = "none";
@@ -18,6 +20,16 @@ function showModal() {
       } else {
         targetDiv.style.display = "block";
       }
+
+      if (targetContainer.style.display !== "none") {
+        targetContainer.style.display = "none";
+      } else if (targetContainer.style.display === "none") {
+        targetContainer.style.display = "block";
+      } else {
+        targetContainer.style.display = "block";
+      }
+
+
 }
 
 const ScannerCamera = () => {
@@ -27,6 +39,7 @@ const ScannerCamera = () => {
     return (
         <div>
             <Modal image={image}/>
+            <div id="overlay" style={{display: "none"}}></div>
             <h1 className='cam-title'>Camera</h1>
             
             <div className='camera-container'>
