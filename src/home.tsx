@@ -26,8 +26,8 @@ function Home() {
             fontSize='18px'
             height = "3.125rem"
             onClick={() =>
-                        /* Make thie open up a popup that brings up camera window */ 
-                        console.log("You clicked on the pink circle!")
+                        /* Make thie open up a popup that brings up camera window */
+                        window.location.href = "/camera"
                     }
             radius = "1em"
             width = "15rem"
@@ -43,7 +43,7 @@ function Home() {
             height = "3.125rem"
             onClick={() => 
                         /* Make thie open up a popup that brings up upload file window */ 
-                        window.location.href = "http://www.youtube.com"
+                        window.location.href = ""
                     }
             radius = "1em"
             width = "13rem"
