@@ -1,6 +1,8 @@
 import React from 'react';
+
 import './App.css';
 import './home.css';
+import './index.css';
 
 import sr from './images/scan-receipt.jpg';
 import ui from './images/upload-image.jpg';
@@ -9,13 +11,37 @@ import sf from './images/search-features.jpg';
 
 
 import Button from './components/ButtonComponent';
+import UploadFileModal from './components/Modal/UploadFileModal';
 
+function showModal() {
+    const targetDiv = document.getElementById("uf-modal");
+    const targetContainer = document.getElementById("uf-overlay");
 
+    console.log("success!")
+    if (targetDiv.style.display !== "none") {
+        targetDiv.style.display = "none";
+      } else if (targetDiv.style.display === "none") {
+        targetDiv.style.display = "block";
+      } else {
+        targetDiv.style.display = "block";
+      }
 
+      if (targetContainer.style.display !== "none") {
+        targetContainer.style.display = "none";
+      } else if (targetContainer.style.display === "none") {
+        targetContainer.style.display = "block";
+      } else {
+        targetContainer.style.display = "block";
+      }
+
+}
 
 function Home() {
     return (
         <>
+        
+        <UploadFileModal />
+
         <h1 className="heading">Ressiscan</h1>
         <div className="heading-desc">The place to store all of your receipts!</div>
         
@@ -41,10 +67,7 @@ function Home() {
             fontColor="#2C3121"
             fontSize='14px'
             height = "3.125rem"
-            onClick={() => 
-                        /* Make thie open up a popup that brings up upload file window */ 
-                        window.location.href = ""
-                    }
+            onClick={() => { showModal(); }}
             radius = "1em"
             width = "13rem"
             children = "Upload a Receipt Instead"

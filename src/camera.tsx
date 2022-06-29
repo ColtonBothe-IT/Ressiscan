@@ -3,8 +3,9 @@ import { Camera } from "react-camera-pro";
 
 import Modal from './components/Modal/Modal'
 
+import './index.css';
 import './App.css';
-import './Camera.css'
+import './Camera.css';
 
 
 
@@ -29,7 +30,6 @@ function showModal() {
         targetContainer.style.display = "block";
       }
 
-
 }
 
 const ScannerCamera = () => {
@@ -39,7 +39,7 @@ const ScannerCamera = () => {
     return (
         <div>
             <Modal image={image}/>
-            <div id="overlay" style={{display: "none"}}></div>
+
             <h1 className='cam-title'>Camera</h1>
             
             <div className='camera-container'>

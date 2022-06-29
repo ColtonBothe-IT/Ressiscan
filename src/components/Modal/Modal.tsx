@@ -1,4 +1,5 @@
 import React from "react";
+
 import './modal.css';
 
 interface Props {
@@ -19,22 +20,26 @@ const Modal: React.FC<Props> = ({
     
      
     return (
-        <div id="modal" style={{display: "none"}}>
-            <div className="closebutton-container">
+        <>
+            <div id="modal" style={{display: "none"}}>
+                <div className="closebutton-container">
                     <button className="x-button" onClick={() => { hideModal(); }} >X</button>
                 </div>
-            <div className="modal-content">
-                
-                <h3 className="title">Would you like to keep this image?</h3>
-                <div className="imagebutton-container">
-                    <img className="confirm-image" src={image} alt=''/>
-                    <div className="button-container">
-                        <button onClick={() => { hideModal(); }}>Cancel/Retake</button>
-                        <button>Continue</button>
+                <div className="modal-content">
+                    
+                    <h3 className="title">Would you like to keep this image?</h3>
+                    <div className="imagebutton-container">
+                        <img className="confirm-image" src={image} alt=''/>
+                        <div className="button-container">
+                            <button onClick={() => { hideModal(); }}>Cancel/Retake</button>
+                            <button>Continue</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+
+            <div id="overlay" style={{display: "none"}}></div>
+        </>
     );
 
   }
