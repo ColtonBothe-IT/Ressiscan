@@ -1,6 +1,6 @@
 import React from "react";
 
-import './modal.css';
+import './UploadFileModal.css';
 
 
 
@@ -28,7 +28,7 @@ class UploadFileModal extends React.Component {
                         <h3 className="title">Upload a File</h3>
                         <div className="container">
                             
-                            <div className="container">
+                            <div className="button-container">
                                 <button onClick={() => { hideModal(); }}>Cancel/Retake</button>
                                 <button>Continue</button>
                             </div>
