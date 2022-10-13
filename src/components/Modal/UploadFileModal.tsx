@@ -13,8 +13,13 @@ function hideModal() {
     targetOverlay.style.display = "none";
 
 }
+
+
+
 class UploadFileModal extends React.Component {
-    
+    fileSelectedHandler = event => {
+        console.log(event.target.files[0]);
+    }
      
     render() {
         return (
@@ -26,10 +31,18 @@ class UploadFileModal extends React.Component {
                     <div className="modal-content">
                         
                         <h3 className="title">Upload a File</h3>
+
+                        
+                        <div className="box">
+
+                            <input type="file" onChange={this.fileSelectedHandler}/>
+
+                        </div>
+
+
                         <div className="container">
-                            
                             <div className="button-container">
-                                <button onClick={() => { hideModal(); }}>Cancel/Retake</button>
+                                <button onClick={() => { hideModal(); }}>Cancel</button>
                                 <button>Continue</button>
                             </div>
                         </div>
